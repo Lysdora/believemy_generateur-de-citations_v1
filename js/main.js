@@ -1,9 +1,9 @@
 // Variables DOM
-const buttonQuote = document.querySelector("#nouveau");
+const buttonQuote = document.querySelector("#nouveau"); // button
 
-const quoteContent = document.querySelector("#citation");
+const quoteContent = document.querySelector("#citation"); //textContent
 
-const quoteAuthor = document.querySelector("#auteur");
+const quoteAuthor = document.querySelector("#auteur"); //AuthornName
 
 // Array quote
 const quote = [
@@ -81,9 +81,10 @@ const quote = [
 // Using my variable randomIndex, I will generate a random quote, using randomQuote[0] for the quote and randomQuote[1] for the author's name.
 buttonQuote.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * quote.length);
-
   const randomQuote = quote[randomIndex];
 
   quoteContent.textContent = randomQuote[0];
   quoteAuthor.textContent = randomQuote[1];
 });
+
+// Autre methode
